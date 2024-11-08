@@ -21,10 +21,10 @@ function Expertlanguages() {
   ];
 
   return (
-    <div className="about p-8 lg:p-16">
+    <div className="about  ">
       {/* Languages Section */}
-      <div className="p-8 lg:p-16 mt-10 rounded-lg shadow-lg">
-        <h2 className="text-4xl text-white text-center mb-8 font-bold">Languages I Can Work With</h2>
+      <div className="p-8 rounded-lg shadow-lg">
+        <h2 className="text-3xl text-white text-center mb-8 font-semibold">Languages I Can Work With</h2>
 
         {/* Proficient Languages */}
         <div className="mb-8">
@@ -33,7 +33,7 @@ function Expertlanguages() {
             {proficientLanguages.map((language, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col items-center  p-4 rounded-lg shadow-md text-white text-center transition-transform duration-300"
+                className="flex flex-col items-center p-3 rounded-lg shadow-md text-white text-center transition-transform duration-300"
                 whileHover={{ scale: 1.05 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ function Expertlanguages() {
 
                 
               >
-                <div className="fimg w-32 h-32 border bg-white flex items-center justify-center rounded-lg overflow-hidden">
+                <div className="fimg w-20 h-20 border bg-white flex items-center justify-center rounded-lg overflow-hidden">
                   <img src={language.img} alt={language.name} className='object-contain w-full h-full p-2' />
                 </div>
                 <span className="mt-2 text-lg font-semibold tracking-wide">{language.name}</span>
@@ -57,13 +57,13 @@ function Expertlanguages() {
             {familiarLanguages.map((language, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col items-center  p-4 rounded-lg shadow-md text-white text-center transition-transform duration-300"
+                className="flex flex-col items-center  rounded-lg shadow-md text-white text-center transition-transform duration-300"
                 whileHover={{ scale: 1.05 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="fimg w-32 h-32 border bg-white flex items-center justify-center rounded-lg overflow-hidden">
+                <div className="fimg w-20 h-20 border bg-white flex items-center justify-center rounded-lg overflow-hidden">
                   <img src={language.img} alt={language.name} className='object-contain w-full h-full p-2' />
                 </div>
                 <span className="mt-2 text-lg font-semibold tracking-wide">{language.name}</span>
