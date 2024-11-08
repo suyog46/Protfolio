@@ -78,7 +78,7 @@ const data = [
   {
     category: "My biggest project",
     title: "Took me 1 year",
-    src: "/img/yn.jpg ",
+    src: "/img/project_1.jpg ",
     content: <DummyContent />,
   }
   
